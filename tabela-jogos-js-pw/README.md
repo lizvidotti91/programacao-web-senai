@@ -1,4 +1,4 @@
-# FlexBox Album
+# Tabela Jogos
 
 * Você pode ver este projeto no meu [CodePen](https://codepen.io/lizvidotti91/pen/JjKoxyq); 
 
@@ -27,6 +27,7 @@ Crie uma página onde será possível adicionar:
 * Os pontos devem ser calculados automaticamente seguindo a fórmula:
 
 ``` 
+
 1 vitória - 3 pontos
 1 derrota - 0 ponto
 1empate - 1 ponto
