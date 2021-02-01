@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>.:21 de boca:.</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+
+    <script src="https://kit.fontawesome.com/a79202eb1e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <section class="game">
+        <div class="game-rules">
+            <h2>Regras</h2>
+            <p>
+                Um jogo infantil, muito popular, é o 21 de boca. O jogo é jogado da seguinte forma: o primeiro jogador
+                diz um número N, que pode ser 1, 2 ou 3. O segundo jogador pode então dizer um número N1 tal que seja N
+                + 1;
+                N + 2; N + 3. E assim por diante, os jogadores se alternam, dizendo sempre um número entre os três
+                números
+                consecutivos ao número anterior. O jogador que disser 21 ganha o jogo. Caso a soma seja maior do que 21,
+                o adversário ganha o jogo.
+            </p>
+            <button class="btn-home rules" onclick="hideRules()">Voltar</button>
+        </div>
+        <div class="home">
+            <h1>Jogo 21 de boca</h1>
+            <h2>Escolha o modo de jogo</h2>
+            <div class="options">
+                <button class="btn-home" onclick="twoPlayer()">Player 1 X Player 2</button>
+                <button class="btn-home" onclick="pcPlayer()">Player 1 X Computador</button>
+            </div>
+            <button class="btn-home rules" onclick="showRules()">Regras</button>
+        </div>
+        <div class="player" id="player">
+            <h2 class="play-time">Jogador 1</h2>
+            <div class="options-player">
+                <button class="btn-1" value="1" onclick="clickBtn1()">+ 1</button>
+                <button class="btn-2" value="2" onclick="clickBtn2()">+ 2</button>
+                <button class="btn-3" value="3" onclick="clickBtn3()">+ 3</button>
+            </div>
+            <div class="answer">0</div>
+            <div class="options-final">
+                <button class="btn-final"> <a href="./index.html"> Sair </a> </button>
+                <button class="btn-final" onclick="realoadGame()">Jogar Novamente</button>
+            </div>
+        </div>
+        <button class="btn-ranking" onclick="showRanking()"><i class="fas fa-trophy"></i></button>
+        <div class="ranking"></div>
+        <div class="btn-menu">
+            <a href="../index.html">Voltar para o Menu</a>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

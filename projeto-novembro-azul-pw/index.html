@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Novembro Azul</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="nav-bar">
+        <img src="./img/logo.png" alt="Logo Clínica Toque Aqui">
+        <h1>Clínica Toca Aqui</h1>
+    </div>
+    <section>
+        <h2>Novembro Azul</h2>
+        <h3>De olho na saúde e na luta pela prevenção do Câncer de Próstata</h3>
+        <div class="container">
+            <figure>
+                <img src="./img/nov-azul.jpg" alt="Imagem Campanha Novembro Azul">
+            </figure>
+            <div class="form">
+                <p>
+                    <label for="name" id="lblname">Nome Completo:</label>
+                    <input type="text" placeholder="Seu Nome Completo Aqui" name="name" id="input-name">
+                </p>
+
+                <p>
+                    <label for="email" id="lbl-email">E-mail:</label>
+                    <input type="text" placeholder="email@seuemail.com" name="email" id="input-email">
+                </p>
+
+                <p>
+                    <label for="phone" id="lbl-phone">Telefone:</label>
+                    <input type="text" placeholder="(01) 91234 - 5678" name="phone" id="input-phone">
+                </p>
+
+                <p>
+                    <label for="age" id="lbl-idade">Idade:</label>
+                    <input type="number" placeholder="99" name="age" id="input-age">
+                </p>
+
+                <p>
+                    <button class="btn btn-cancel" onclick="limpaFormulario()">Cancelar</button>
+                    <button class="btn btn-check" onclick="verificaIdade()">Verificar</button>
+                    <button class="btn btn-add" onclick="adicionaPaciente()">Adicionar</button>
+                </p>
+            </div>
+            <div class="post-it">
+                <h2>Lista de Exames</h2>
+
+                <div id="container-note"></div>
+            </div>
+        </div>
+    </section>
+    <div class="btn-menu">
+        <a href="../index.html">Voltar para o Menu</a>
+    </div>
+
+    <script src="lib.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>

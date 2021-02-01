@@ -1,0 +1,112 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Open Sans Condensed', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --blue-NCS: #118AB2;
+    --caribean-green: #06D6A0;
+    --midnight-green-eagle-green: #073B4C;
+    --orange-yellow-crayola: #FFD166;
+    --paradise-pink: #EF476F;
+}
+
+body{
+    align-items: center;
+    background-color: var(--midnight-green-eagle-green);
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+}
+
+#form{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#form h1{
+    color: var(--paradise-pink);
+    font-weight: 300;
+    font-size: 3em;
+    margin-bottom: 2vh;
+}
+
+#form form p{
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+    width: 80vw;
+}
+
+#form form input{
+    height: 30px;
+}
+
+#form form input,
+#form form textarea{
+    border: none;
+    border-radius: 0px 10px 10px 0px;
+    max-width: 558px;
+    padding: 5px;
+    width: 71vw;
+}
+
+#form form input[type='reset'],
+#form form input[type='submit']{
+    background-color: var(--blue-NCS);
+    border-radius: 10px;
+    color: var(--midnight-green-eagle-green);
+    font-weight: bold;
+    margin-right: 10px;
+    transition: 0.3s;
+    width: 100px;
+}
+
+#form form input[type='reset']:hover,
+#form form input[type='reset']:focus,
+#form form input[type='submit']:hover,
+#form form input[type='submit']:focus{
+    opacity: 0.5;
+}
+
+span i{
+    border: none;
+    border-radius: 10px 0 0 10px;
+    background-color: var(--orange-yellow-crayola);
+    color: var(--midnight-green-eagle-green);
+    height: 30px;
+    max-width: 64px;
+    padding: 6px;
+    text-align: center;
+    width: 8vw;
+}
+
+.btn-menu{
+    border: 2px solid #fca311;
+    border-radius: 1vh;
+    bottom: 4vh;
+    padding: 10px;
+    position: absolute;
+    right: 4vw;
+    transition: 0.3s;
+}
+
+.btn-menu:hover{
+    border: 2px solid whitesmoke;
+}
+
+.btn-menu a{
+    color: #fca311;
+    font-size: 3vh;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn-menu a:hover{
+    color: whitesmoke;
+    text-decoration: none;
+}

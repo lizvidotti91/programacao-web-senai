@@ -1,0 +1,25 @@
+.btn-menu{
+    border: 2px solid #fca311;
+    border-radius: 1vh;
+    bottom: 4vh;
+    padding: 10px;
+    position: absolute;
+    right: 4vw;
+    transition: 0.3s;
+}
+
+.btn-menu:hover{
+    border: 2px solid whitesmoke;
+}
+
+.btn-menu a{
+    color: #fca311;
+    font-size: 3vh;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn-menu a:hover{
+    color: whitesmoke;
+    text-decoration: none;
+}

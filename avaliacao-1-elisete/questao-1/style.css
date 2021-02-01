@@ -1,0 +1,49 @@
+*{
+    box-sizing: border-box;
+    font-family: monospace;
+    font-size: 3vh;
+    margin: 0;
+    padding: 0;
+}
+
+#app{
+    background-color: #13262F;
+    height: 100vh;
+    padding: 10vh;
+    width: 100vw;
+}
+
+label{
+    color: #E9E6FF;
+    margin-right: 1vw;
+}
+
+input{
+    border-radius: 1vh;
+    box-shadow: 2px 2px 0px black;
+    padding: 5px;
+    width: 8vw;
+}
+
+button{
+    background-color: #5A9367;
+    border-radius: 1vh;
+    box-shadow: 2px 2px black;
+    font-weight: bold;
+    margin-left: 2vw;
+    padding: 5px;
+    transition: 0.3s;
+}
+
+button:hover{
+    opacity: 0.5;
+}
+
+ul{
+    color: #E9E6FF;
+    margin-top: 5vh;
+}
+
+li{
+    margin-bottom: 1vh;
+}

@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    background-color: #2b2d42;
+}
+
+.menu-container {
+    background-color: #ef233c;
+    overflow: hidden;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.menu-container > a {
+    color: #edf2f4;
+    display: block;
+    float: left;
+    padding: 10px;
+}
+
+.menu-container > a:hover,
+.menu-container > a:focus {
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.menu-container > i {
+    color: #edf2f4;
+    display: none;
+}
+
+@media (max-width: 600px) {
+    .menu-container > i {
+        display: block;
+        float: right;
+    }
+    .menu-container > a {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .menu-container.responsive {
+        padding: 5px;
+    }
+
+    .menu-container.responsive > i {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+    }
+
+    .menu-container.responsive a {
+        display: block;
+        float: none;
+        padding: 8px 2px;
+    }
+}
+
+#album {
+    padding-top: 5vh;
+    min-height: 100vh;
+}
+
+#album > h2 {
+    color: #edf2f4;
+    margin-bottom: 1vh;
+    margin-top: 6vh;
+    text-align: center;
+}
+
+.container {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.container > figure {
+    margin: 2vh;
+}
+
+figure > img {
+    width: 200px;
+}
+
+figure > p {
+    color: #edf2f4;
+    font-weight: 100;
+    margin-top: 5px;
+    text-align: center;
+}
+
+footer {
+    align-items: center;
+    background-color: #ef233c;
+    color: #edf2f4;
+    display: flex;
+    height: 40px;
+    justify-content: center;
+    width: 100%;
+}
+
+
+.btn-menu{
+    border: 2px solid #ef233c;
+    border-radius: 1vh;
+    bottom: 4vh;
+    padding: 10px;
+    position: absolute;
+    right: 4vw;
+    transition: 0.3s;
+}
+
+.btn-menu:hover{
+    border: 2px solid whitesmoke;
+}
+
+.btn-menu a{
+    color: #ef233c;
+    font-size: 2vh;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn-menu a:hover{
+    color: whitesmoke;
+    text-decoration: none;
+}
